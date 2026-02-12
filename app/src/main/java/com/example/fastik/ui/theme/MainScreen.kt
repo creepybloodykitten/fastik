@@ -42,7 +42,7 @@ fun Screen(viewModel: MainViewModel = viewModel())
     { innerPadding ->
         Box(modifier = Modifier.fillMaxSize().padding(innerPadding))
         {
-            Text("Тут будет контент плеера")
+            SongListScreen(songs = viewModel.songs)
         }
     }
 
